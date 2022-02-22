@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import About from "./about";
 import Homes from "./home";
 import "antd/dist/antd.css";
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>

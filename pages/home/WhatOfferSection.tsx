@@ -14,7 +14,10 @@ export default function WhatOfferSection(props: Props) {
         <div className={styles["offer-card"]}>
           <div className={styles["card-grid"]}>
             {props.homePageServices?.map((service: any, index: number) => {
-              console.log("service Image---->", service.image.data.attributes.url);
+              console.log(
+                "service Image---->",
+                service.image.data.attributes.url
+              );
               return (
                 <CustomCard key={index} className="offer-card">
                   <Space size={14}>

@@ -28,6 +28,7 @@ const TestimonialSection = (props: Props) => {
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
+    // arrows: false,
     responsive: [
       {
         breakpoint: 1400,
@@ -52,10 +53,6 @@ const TestimonialSection = (props: Props) => {
                       src={testImg}
                       alt="Testimonial data"
                       className={styles["test-bg"]}
-                      // height="100"
-                      // width="100"
-                      // layout="responsive"
-                      // objectFit="contain"
                     />
                     <div className={styles["card-body"]}>
                       <Tag className="testimonial-tag" color="black">
@@ -89,7 +86,7 @@ const TestimonialSection = (props: Props) => {
                               width="100"
                               layout="responsive"
                               objectFit="contain"
-                           />
+                            />
                             <div>
                               <div className={styles["person-name"]}>
                                 {rating.clientName}
