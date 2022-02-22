@@ -1,0 +1,145 @@
+
+.our-services-section {
+  margin: 12rem 0px;
+
+  .service-section-btn {
+    margin-top: 2.8rem;
+  }
+}
+
+.do-best-section {
+  position: relative;
+  overflow: hidden;
+
+  .arrow-left {
+    position: absolute;
+    left: -50px;
+  }
+
+  .right-arrow {
+    position: absolute;
+    right: -50px;
+    bottom: -10%;
+  }
+
+  .best-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #5e5873;
+    text-align: center;
+  }
+
+  .developmet {
+    margin: 9rem 0px;
+  }
+
+  .service-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #5e5873;
+  }
+}
+
+.design-service-section {
+  position: relative;
+}
+
+.Devops-serice-section {
+  position: relative;
+  margin: 9rem 0px;
+
+  .arrow-left {
+    position: absolute;
+    left: -50px;
+    top: -70%;
+  }
+}
+
+.start-project-section {
+  margin-bottom: 9rem;
+
+  .card-div {
+    margin-top: 6rem;
+  }
+
+  .price {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #213864;
+    margin-bottom: 0px;
+    margin-top: 0.3rem;
+  }
+
+  .happy-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: #213864;
+  }
+}
+
+.description-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.56rem;
+  line-height: 157.5%;
+  letter-spacing: 0.004em;
+  color: #213864;
+}
+
+.styled-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.18rem;
+  line-height: 3.25rem;
+  color: #213864;
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styled-title::after {
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  content: "";
+  position: absolute;
+  border-top: 0.875rem solid #be3052;
+  border-right: 0.875rem solid #be3052;
+  border-radius: 2px;
+  right: -1.2rem;
+  top: -0.68rem;
+}
+
+.text-left {
+  text-align: left;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .do-best-section {
+    .arrow-left {
+      left: -100px;
+    }
+
+    .right-arrow {
+      right: -100px;
+    }
+  }
+
+  .arrow-left {
+    left: -100px !important;
+  }
+}
+
+.service-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.23rem;
+  color: #5e5873;
+  margin-bottom: 16px;
+}

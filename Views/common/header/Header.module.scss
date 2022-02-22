@@ -1,0 +1,21 @@
+
+.bg-white {
+  background-color: #ffffff;
+  height: 84px;
+  width: 100%;
+}
+
+.flex-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer {
+  width: fit-content;
+  margin-left: auto;
+  height: 84px;
+  display: flex;
+  align-items: center;
+}

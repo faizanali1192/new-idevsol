@@ -1,0 +1,12 @@
+overwrite: true
+watch: true
+schema: "http://localhost:1337/graphql"
+documents: "./redux/api's.gql"
+generates:
+  generated/graphql.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-rtk-query:
+          importBaseApiFrom: "../redux/baseApi"
+          exportHooks: true

@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+.container-xl {
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0px 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .container-xl {
+    max-width: 100%;
+  }
+
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container-xl {
+    max-width: 100%;
+  }
+
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-xl {
+    max-width: 100%;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-xl {
+    max-width: 100%;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-xl {
+    max-width: 1190px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container-xl {
+    max-width: 1380px;
+  }
+
+  html {
+    font-size: 16px;
+  }
+}
+
+.text-center {
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-fluid {
+  max-width: 100% !important;
+  max-height: auto !important;
+}
+
+.ant-layout {
+  background-color: #fff;
+}
+
+//Header Section Global Code--------------
+.IDevsol-header.ant-layout-header {
+  padding: 0px;
+  background: transparent;
+  box-shadow: 0px 8px 24px rgba(94, 119, 249, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  height: 84px;
+
+  .IDevSol-logo {
+    float: left;
+    line-height: 84px;
+  }
+
+  .IDevSol-navBar {
+    background-color: transparent;
+    color: #ffffff;
+    line-height: 84px;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+
+    li.active > a {
+      font-weight: 500;
+    }
+    li.active > a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90.26deg, #ed4c5c 19.3%, #ffffff 78.44%);
+      border-radius: 4px;
+      height: 4px;
+      border-bottom: none;
+      bottom: -5px;
+    }
+    li {
+      padding: 0px 20px;
+
+      a {
+        position: relative;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+#header-scrolled.IDevsol-header.ant-layout-header {
+  .IDevSol-navBar > li a {
+    color: #c4c4c4;
+  }
+
+  li a.active {
+    color: #be3052;
+  }
+
+  li a.active:hover {
+    color: #be3052;
+  }
+
+  .menu-btn.ant-btn {
+    svg {
+      path {
+        stroke: #463966;
+      }
+    }
+  }
+}
+
+.menu-drawer.ant-drawer {
+  .ant-drawer-content-wrapper {
+    .ant-drawer-header {
+      padding: 0px;
+      background-color: #be3052;
+
+      .ant-drawer-header-title {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        margin-bottom: 0.5rem;
+
+        .anticon {
+          color: #ffffff;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .ant-drawer-content {
+      background: #be3052;
+
+      a {
+        position: relative;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        color: #ffffff;
+      }
+
+      a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90.26deg, #ed4c5c 19.3%, #ffffff 78.44%);
+        border-radius: 4px;
+        height: 4px;
+        border-bottom: none;
+        bottom: -5px;
+      }
+    }
+  }
+}
+//-------------------------------------------
+// Home Page global css
+.IDevSol-content.ant-layout-content {
+  min-height: calc(100vh - 128px);
+  background-color: white;
+}
+
+.testimonial-tag.ant-tag {
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.testimonial-cards {
+  .slick-slide {
+    padding: 0px 5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .slick-slide {
+      padding: 0px 2rem;
+    }
+  }
+}
+//--------------------
+// Service Page Global css
+.service {
+  width: 16px;
+  height: 16px;
+  background-color: #05cd99;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  border-radius: 100%;
+}
+
+//-------------------------
+// Custom Button Global css
+.contact-us-btn.ant-btn {
+  border-radius: 25px 0px 25px 25px;
+  height: auto;
+  border: solid 3px transparent;
+  background-image: linear-gradient(#6e2d43, #043c5e),
+    linear-gradient(#6e2d43, #043c5e);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #be3052;
+  padding: 0.8rem 1.875rem;
+  z-index: 1;
+}
+
+.contact-us-btn.ant-btn:active {
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.service-btn.ant-btn {
+  background: #be3052;
+  border-radius: 25px 25px 25px 0px;
+  height: auto;
+  padding: 0.8rem 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #fff;
+  border: solid 3px transparent;
+  z-index: 1;
+}
+
+.service-btn.ant-btn:active {
+  box-shadow: none;
+}
+
+.header-contact-us-btn.ant-btn {
+  background: #be3052;
+  border-radius: 12px;
+  border-color: #be3052;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #fff;
+  height: auto;
+  padding: 00.8rem 1.875rem;
+}
+
+.header-contact-us-menu-btn.ant-btn {
+  background: #213864;
+  border-radius: 12px;
+  border-color: #213864;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #fff;
+  height: auto;
+  padding: 00.8rem 1.875rem;
+}
+
+.menu-btn.an-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.apply-btn.ant-btn {
+  background: #be3052;
+  border-radius: 50px;
+  border-color: #be3052;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #fff;
+  height: auto;
+  padding: 00.8rem 1.875rem;
+}
+//-----------------------------------
+// Cusom Loader global css
+.custom-loader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ant-spin {
+    color: #be3052;
+    font-size: 1.5rem;
+
+    .ant-spin-dot {
+      .ant-spin-dot-item {
+        background-color: #be3052;
+      }
+    }
+  }
+}
+//---------------------------------
+//--------------------------
+// custom card global css
+.offer-card.ant-card {
+  position: relative;
+
+  .ant-card-body {
+    padding: 12px;
+  }
+}
+
+// .offer-card.ant-card .ant-card-body::after {
+//   content: "";
+//   width: 22px;
+//   height: 22px;
+//   position: absolute;
+//   left: -5px;
+//   bottom: -5px;
+//   border-radius: 2px;
+//   border-left: 5px solid #ed4c5c;
+//   border-bottom: 5px solid #ed4c5c;
+// }
+
+.offer-card.ant-card .ant-card-body::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-radius: 2px;
+  border-right: 5px solid #ed4c5c;
+  border-top: 5px solid #ed4c5c;
+}
+
+.team-card.ant-card {
+  background-color: inherit;
+}
+
+.service-card.ant-card {
+  position: relative;
+}
+
+#serviceRow .ant-col:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 0;
+  border-right: 1px solid #8f8f8f;
+  height: 100px;
+}
+
+@media only screen and (max-width: 576px) {
+  #serviceRow .ant-col:not(:last-child):after {
+    display: none;
+  }
+}
+//------------------------------------------
+// Custom Input Global css
+.custom-input.ant-input {
+  background: #ffffff;
+  border: 0.5px solid #cecece;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 54px;
+}
+
+.custom-textArea.ant-input {
+  background: #ffffff;
+  border: 0.5px solid #cecece;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.custom-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #213864;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.sendEmail.ant-input-group {
+  height: 48px;
+  .ant-input {
+    height: 48px;
+    border: 1px solid #be3052;
+  }
+  .ant-input:focus {
+    box-shadow: none;
+  }
+  .ant-btn {
+    height: 48px;
+    background: #be3052;
+    border-color: #be3052;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+}
+//---------------------------
+
+// Custom Input Group style
+.sendEmail.ant-input-group {
+  height: 48px;
+  .ant-input {
+    height: 48px;
+    border: 1px solid #be3052;
+  }
+  .ant-input:focus {
+    box-shadow: none;
+  }
+  .ant-btn {
+    height: 48px;
+    background: #be3052;
+    border-color: #be3052;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+}
+//----------------------------
+// Custom Loader Global css
+.job-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.56rem;
+  color: #213864;
+}
+
+.job-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #213864;
+}
+//-----------------------------
+
+// Footer Global css
+
+.IDevsol-footer.ant-layout-footer {
+  background: #463966;
+  padding: 2rem 0px;
+}
+.footer-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: #fff;
+  text-align: center;
+}
+//-------------------------------------------

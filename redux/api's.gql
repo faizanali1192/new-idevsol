@@ -1,0 +1,251 @@
+query homePage {
+  home {
+    data {
+      attributes {
+        heroTitle
+        heroDescription
+        aboutTitle
+        aboutDescription
+        homePageServices {
+          id
+          title
+          description
+          image {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+        goalTitle
+        goalDescription
+        goalImage {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        homePageRatings {
+          id
+          clientRatings
+          clientName
+          clientImage {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+        team {
+          id
+          personName
+          personImage {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+          designation
+          links {
+            id
+            facebook
+            twitter
+            linkedin
+          }
+        }
+      }
+    }
+  }
+}
+
+query servicesPage {
+  service {
+    data {
+      attributes {
+        heroDescription
+        bestDescription
+        heroImage {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        blogs {
+          id
+          title
+          description
+          points {
+            point
+          }
+          image {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+        companyDetails {
+          title
+          description
+          image {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query aboutPage {
+  about {
+    data {
+      attributes {
+        heroDescription
+        heroImage {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        blog {
+          blogTitle
+          blogDescription
+          blogList {
+            title
+            description
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+          }
+        }
+        philosophy {
+          title
+          description
+        }
+        work {
+          title
+          description
+          image {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+        team {
+          personName
+          designation
+          links {
+            facebook
+            twitter
+            linkedin
+          }
+        }
+      }
+    }
+  }
+}
+
+query careersPage {
+  career {
+    data {
+      attributes {
+        heroDescription
+        heroImage {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        joinUs {
+          title
+          description
+          image {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+        Activities {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        openPositions {
+          jobTitle
+          jobDescription
+          jobLink
+        }
+      }
+    }
+  }
+}
+
+query footerSection {
+  footer {
+    data {
+      attributes {
+        footerDescription
+      }
+    }
+  }
+}
+
+query lowerFooter {
+  lowerFooter {
+    data {
+      attributes {
+        copyRightText
+      }
+    }
+  }
+}
+
+query contactPage {
+  contact {
+    data {
+      attributes {
+        heroDescription
+        heroImage {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        credentials {
+          title
+          description
+          icon {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

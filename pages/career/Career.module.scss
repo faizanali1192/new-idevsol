@@ -1,0 +1,98 @@
+.career-section {
+    margin: 12rem 0px;
+}
+
+.why-join-us {
+    .join-div {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .join-title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #213864;
+        margin-bottom: 0px;
+    }
+
+    .join-text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.125rem;
+        color: #213864;
+    }
+}
+
+.activities-section {
+    margin: 8rem 0px;
+
+    .gallery-grid {
+        margin: 0px auto;
+        width: 80%;
+        margin-top: 6rem;
+    }
+}
+
+.open-position-section {
+    margin-bottom: 6rem;
+
+    .jobs-div {
+        margin-top: 6rem;
+    }
+}
+
+.description-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.56rem;
+    line-height: 157.5%;
+    letter-spacing: 0.004em;
+    color: #213864;
+
+}
+
+.styled-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.18rem;
+    line-height: 3.25rem;
+    color: #213864;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styled-title::after {
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+    content: "";
+    position: absolute;
+    border-top: 0.875rem solid #be3052;
+    border-right: 0.875rem solid #be3052;
+    border-radius: 2px;
+    right: -1.2rem;
+    top: -0.68rem;
+}
+
+.read-more {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(190, 48, 82, 0.12);
+}
+
+.read-more-link {
+    margin-left: -30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #BE3052;
+}
+
+.text-left {
+    text-align: left;
+    width: fit-content;
+}
